@@ -1,13 +1,49 @@
-const btns = document.querySelector(".option_buttons");
-const btn = document.querySelectorAll(".options");
-const option1 = document.querySelector(".option_1");
-const option2 = document.querySelector(".option_2");
-const option3 = document.querySelector(".option_3");
-const description1 = document.querySelector(".description_1");
-const description2 = document.querySelector(".description_2");
-const description3 = document.querySelector(".description_3");
-const descriptionContationer = document.querySelector(".description_container");
+const stickyBegins = document.querySelector(".sticky-begins");
+const navigation = document.querySelector("nav");
 
-// option2.addEventListener("click", () => {
-//   description2.classList.toggle("display_active");
+// const targetCoords = stickyBegins.getBoundingClientRect();
+
+// console.log(targetCoords);
+
+// window.addEventListener("scroll", () => {
+//   console.log(window.scrollY);
+//   if (window.scrollY >= targetCoords.top) {
+//     navigation.classList.add("sticky");
+//   } else navigation.classList.remove("sticky");
 // });
+
+//Sticky navigation using Intersection Observer API
+
+// const obsCallback = (entries, observer) => {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//   });
+// };
+
+// const obsOptions = {
+//   root: null,
+//   threshold: 0.1,
+// };
+
+// const observer = new IntersectionObserver(obsCallback, obsOptions);
+// observer.observe(stickyBegins);
+
+const stickyCallBack = (entries) => {
+  //   const entry1 = entries[0];
+
+  entries.forEach((entry) => {
+    if (entry.isIntersecting === true) {
+      navigation.classList.add("sticky");
+    } else {
+      navigation.classList.remove("sticky");
+    }
+  });
+};
+
+const stickyObserver = new IntersectionObserver(stickyCallBack, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-30px",
+});
+
+stickyObserver.observe(stickyBegins);
