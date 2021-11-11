@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  width: 600px;
+  height: 500px;
+}
+
+.blur {
+  filter: blur(4px);
+  transform: translateY(8px);
+}
