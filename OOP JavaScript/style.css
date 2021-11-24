@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgreen;
+  background: linear-gradient(217deg, green, yellow);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+}
