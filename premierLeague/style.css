@@ -1,0 +1,22 @@
+.spursHome {
+    background-color:  navy;
+    color: white;
+    padding: 5px 0;
+    
+}
+
+.spursAway {
+    background-color:  purple;
+    color: white;
+    padding: 3px 0;
+}
+
+.spursLost {
+    text-decoration: line-through;
+    color: red;
+}
+
+li{
+    margin: 20px 0;
+    list-style: none;
+}
