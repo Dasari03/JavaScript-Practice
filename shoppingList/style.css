@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    left: 100px;
+    width: 400px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    border: none;
+    
+}
