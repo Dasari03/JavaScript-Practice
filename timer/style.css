@@ -1,0 +1,47 @@
+body{
+    position: relative;
+}
+
+
+.timeInput {
+    border: none;
+    font-size: 3rem;
+    font-weight: 1000;
+    background-color: transparent;
+    transform: translate(160px, -300px);
+    width: 10rem;
+}
+
+.timeInput:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    font-size: 3.5rem;
+    background-color: transparent;
+    transform: translate(140px, -260px);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* .innerCircle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(-350px);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner {
+    display: flex;
+    justify-self: center;
+} */

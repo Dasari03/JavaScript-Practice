@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="circleContainer">
+    <svg class ="circle" width = "400" height = "400">
+        <circle
+    r = "180" 
+    cx = "200" 
+    cy = "200"
+    fill = 'transparent'
+    stroke = 'lime'
+    stroke-width = '15'
+    transform="rotate(-90 200 200)"
+    >
+        </circle>
+    </svg>
+</div>
+
+<div class="innerCircle">
+    <input class="timeInput" type="text" value = "60">
+    <div class="inner">
+        <button class="start"><i class="fa-solid fa-play"></i></button>
+        <button class="pause"><i class="fa-solid fa-pause"></i></button>
+    </div>
+</div>
+
+    <script src="timer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
